@@ -46,28 +46,26 @@ echo <<<_END
     <script src="validate.js"></script>
 </head>
 <body>
-    <table class="signup" border="0" cellpadding="2" cellspacing="5" bgcolor="#eeeeee">
-
-        <form method="post" action="adduser.php" onsubmit="return validate(this)">
-            <th colspan="2" align="center">Signup Form</th>
-            <tr><td colspan="2">Sorry, the following errors were found<br>
-            in your form: <p><font color="red" size="1"<i>$fail</i></font> </p></td></tr>
-            <tr><td>Forename</td>
-                <td><input type="text" maxlength="32" name="forename"></td></tr>
-            <tr><td>Surname</td>
-                <td><input type="text" maxlength="32" name="surname"></td></tr>
-            <tr><td>Username</td>
-                <td><input type="text" maxlength="16" name="username"></td></tr>
-            <tr><td>Password</td>
-                <td><input type="text" maxlength="12" name="password"></td></tr>
-            <tr><td>Age</td>
-                <td><input type="text" maxlength="3" name="age"></td></tr>
-            <tr><td>Email</td>
-                <td><input type="text" maxlength="64" name="email"></td></tr>
-            <tr><td colspan="2" align="center"><input type="submit" value="Signup"></td></tr>
-        </form>
-    </table>
-
+    <table border="0" cellpadding="2" cellspacing="5" bgcolor="#eeeeee">
+        <th colspan="2" align="center">Signup Form</th>
+        <tr><td colspan="2">Sorry, the following errors were found<br>
+            in your form: <p><font color="red" size="1"> <i>$fail</i></font> </p></td></tr>
+        <form method="post" action="adduser.php" ">
+        <tr><td>Forename</td>
+            <td><input type="text" maxlength="32" name="forename" value="$forename"></td></tr>
+        <tr><td>Surname</td>
+            <td><input type="text" maxlength="32" name="surname" value="$surname"></td></tr>
+        <tr><td>Username</td>
+            <td><input type="text" maxlength="16" name="username" value="$username"></td></tr>
+        <tr><td>Password</td>
+            <td><input type="text" maxlength="12" name="password" value="$password"></td></tr>
+        <tr><td>Age</td>
+            <td><input type="text" maxlength="3" name="age" value="$age"></td></tr>
+        <tr><td>Email</td>
+            <td><input type="text" maxlength="64" name="email" value="$email"></td></tr>
+        <tr><td colspan="2" align="center"><input type="submit" value="Signup"></td></tr>
+    </form>
+</table>
 </body>
 </html>
 _END;

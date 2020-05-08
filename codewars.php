@@ -159,6 +159,53 @@ function generateHashtag_adv($str) {
     return (strlen($str) > 140 || strlen($str) == 1) ? false : $str;
 }
 
-$node->getNext()
+
+
+
+
+
+
+
+
+
+
+//You are given an array strarr of strings and an integer k. Your task is to return the first longest string consisting of k consecutive strings taken in the array.
+//
+//Example:
+//longest_consec(["zone", "abigail", "theta", "form", "libe", "zas", "theta", "abigail"], 2) --> "abigailtheta"
+//
+//n being the length of the string array, if n = 0 or k > n or k <= 0 return "".
+//
+//    Note
+//consecutive strings : follow one after another without an interruption
+function longestConsec($strarr, $k) {
+    if (count($strarr) > 0 && $k<=count($strarr) && $k>0) {
+        $eachLen = array_map('strlen', $strarr);
+        return implode('', array_slice($strarr, array_search(max($eachLen), $eachLen), $k));
+    } else {return "";}
+}
+
+//$val = ["zone", "abigail", "theta", "form", "libe", "zas"];
+//$val = [];
+//$leng = array_map('strlen', $val);
+//print_r($val[array_search(max($leng), $leng)]);
+//echo $val[array_search(max($leng), $leng)] == end($val)? 'Is is end': 'It is not';
+
+//print_r(longestConsec(["ejjjjmmtthh", "zxxuueeg", "aanlljrrrxx", "dqqqaaabbb", "oocccffuucccjjjkkkjyyyeehh"], 1));
+
+function longestConsec_adv($strarr, $k) {
+    $longest = '';
+    if ($k > 0) {
+        for ($i = 0; $i < count($strarr) - $k + 1; $i++) {
+            $consecutive = implode('', array_slice($strarr, $i, $k));
+            $longest = strlen($consecutive) > strlen($longest) ? $consecutive : $longest;
+        }
+    }
+    return $longest;
+}
+
+
+
+
 
 
