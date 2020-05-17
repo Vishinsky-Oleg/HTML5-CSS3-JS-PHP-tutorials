@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46ff8488-5f79-476a-b722-45c6be6c7621" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Validation/adduser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrossBrowserAsyncFunction.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urlget.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urlget.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urlpost.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urlpost.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmlget.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmlget.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JsValidation.html" beforeDir="false" afterPath="$PROJECT_DIR$/Validation/JsValidation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codewars.php" beforeDir="false" afterPath="$PROJECT_DIR$/codewars.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script_tut.html" beforeDir="false" afterPath="$PROJECT_DIR$/script_tut.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -32,6 +35,7 @@
   </component>
   <component name="ProjectId" id="1ZPLnAP2PA9C9voN70TgGwNykK2" />
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -68,7 +72,10 @@
       <updated>1586805224361</updated>
       <workItem from="1586805225440" duration="3172000" />
       <workItem from="1586808601567" duration="13000" />
-      <workItem from="1588944952048" duration="5553000" />
+      <workItem from="1588944952048" duration="6838000" />
+      <workItem from="1589127261489" duration="743000" />
+      <workItem from="1589210222717" duration="1184000" />
+      <workItem from="1589669260756" duration="5022000" />
     </task>
     <servers />
   </component>
@@ -80,7 +87,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

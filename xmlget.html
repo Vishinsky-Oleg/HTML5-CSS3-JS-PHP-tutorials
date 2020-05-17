@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Asynchronous communication example</title>
+</head>
+<body style="text-align: center">
+<h1>Loading a web page into a DIV</h1>
+<div id="info">This sentence will be replaced</div>
+
+
+<script>
+    nocache = "&nocache=" + Math.random() * 1000000;
+    url = "rss.news.yahoo.com/rss/topstories";
+    out = "";
+
+    request = new asyncRequest();
+    request.open("GET", "xmlget.php?url=" + url + nocache, true);
+
+
+    request.onreadystatechange = function() { //using anonymous callback function
+        if (this.readyState == 4) {
+            if (this.status == 200) {
+                if (this.responseText != null) {
+                    titles = this.responseXML.getElementsByTagName('title');
+                    for (j=0;j<titles.length;++j) {
+                        out += titles[j].childNodes[0].nodeValue + '<br>'
+                    }
+                    document.getElementById('info').innerHTML = out;
+                } else {alert("Communication error: No data received");}
+            } else {alert("Communication error: " + this.statusText);}
+        }
+    }
+
+    request.send(null);
+    function asyncRequest() {
+        try { //NON IE browser?
+            var request = new XMLHttpRequest(); //YES
+        }
+        catch (e1) {
+            try { //IE 6+?
+                request = new ActiveXObject("Msxml2.XMLHTTP"); //YES
+            }
+            catch (e2) {
+                try { //IE 5?
+                    request = new ActiveXObject("Microsoft.XMLHTTP"); //YES
+                }
+                catch (e3) { //There's no asynchronous support
+                    request = false;
+                }
+            }
+        }
+        return request;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax</title>
+</head>
+<body>
+<script>
+    function asyncRequest() {
+        try { //NON IE browser?
+            var request = new XMLHttpRequest(); //YES
+        } 
+        catch (e1) {
+            try { //IE 6+?
+                request = new ActiveXObject("Msxml2.XMLHTTP"); //YES
+            }
+            catch (e2) {
+                try { //IE 5?
+                    request = new ActiveXObject("Microsoft.XMLHTTP"); //YES
+                }
+                catch (e3) { //There's no asynchronous support
+                    request = false;
+                }
+            }
+        }
+        return request;
+    }
+</script>
+    
+</body>
+</html>
