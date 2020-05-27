@@ -205,7 +205,69 @@ function longestConsec_adv($strarr, $k) {
 }
 
 
+function alphanumeric(string $s): bool {
+    if (preg_match("/[^a-zA-Z0-9\S-]/", $s) || empty($s)) {
+        return false;
+    } else return true;
+}
+
+function alphanumeric_adv(string $s): bool {
+    // Your code here
+    return ctype_alnum($s);
+}
+
+//echo alphanumeric('Mazinkaiser') ? "True": "False";
+//echo alphanumeric('hello world_') ? "True": "False";
+//echo alphanumeric('PassW0rd') ? "True": "False";
+//echo alphanumeric('     ') ? "True": "False";
+//echo alphanumeric('hello world') ? "True": "False";
+//echo alphanumeric('hello-world') ? "True": "False";
+//echo alphanumeric('') ? "True": "False";
 
 
 
 
+
+
+
+
+
+
+
+
+
+//For a given chemical formula represented by a string, count the number of atoms of each element contained in the molecule and return an object (associative array in PHP, Dictionary<string, int> in C#, Map<String,Integer> in Java).
+//
+//For example:
+//
+//    parse_molecule('H2O'); // => ['H' => 2, 'O' => 1]
+//    parse_molecule('Mg(OH)2'); // => ['Mg' => 1, 'O' => 2, 'H' => 2]
+//    parse_molecule('K4[ON(SO3)2]2'); // => ['K' => 4, 'O' => 14, 'N' => 2, 'S' => 4]
+//    As you can see, some formulas have brackets in them. The index outside the brackets tells you that you have to multiply count of each atom inside the bracket on this index. For example, in Fe(NO3)2 you have one iron atom, two nitrogen atoms and six oxygen atoms.
+//
+//Note that brackets may be round, square or curly and can also be nested. Index after the braces is optional.
+
+function parse_molecule(string $formula): array
+{
+    $molecule = '('.$formula.')';
+    do {
+        $molecule = preg_replace_callback('/[\(\[\{](\w+)[\)\]\}](\d+)?/', function ($matches) {
+            return parseBrackets($matches[1], $matches[2] ?? 1);
+        }, $molecule, -1, $count);
+    } while ($count);
+
+    $atoms = [];
+    preg_match_all('/([A-Z][a-z]*)(\d+)?/', $molecule, $matches, PREG_SET_ORDER);
+    foreach ($matches as $match) {
+        $atom = $match[1];
+        $atoms[$atom] =  ($atoms[$atom] ?? 0) + $match[2];
+    }
+    return $atoms;
+}
+
+function parseBrackets($string, $multiply)
+{
+    return preg_replace_callback('/([A-Z][a-z]*)(\d+)?/', function ($matches) use ($multiply) {
+        return $matches[1].($matches[2] ?? 1)*$multiply;
+    }, $string);
+}

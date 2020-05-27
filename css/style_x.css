@@ -1,0 +1,63 @@
+#one {
+    font-style: normal;
+    line-height: 190%;
+    letter-spacing: 5px;
+    background: cadetblue;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 10px black;
+    padding: 10px;
+}
+#two {
+    line-height: 190%;
+    font-size: 20px;
+    box-sizing: content-box;
+    margin: 10px;
+    border: 10px black;
+    padding: 10px;
+}
+
+#three {
+    width: 300px;
+    height: 300px;
+    background: url(img/img.jpg) no-repeat;
+    padding: 30px;
+    border: 5px solid goldenrod;
+    border-radius: 15px;
+    box-shadow: 15px 15px 15px #888;
+    margin: 30px;
+
+
+}
+
+
+#four {
+    font-size: 15px;
+    width: 500px;
+    height: 700px;
+    padding: 30px;
+    background: url(img/tl.png) top left no-repeat,
+    url(img/tr.png) top right no-repeat,
+    url(img/br.png) bottom left no-repeat,
+    url(img/bl.png) bottom right no-repeat,
+    url(img/top.png)top repeat-x,
+    url(img/left.png)left repeat-y,
+    url(img/right.png)right repeat-y,
+    url(img/bot.png)bottom repeat-x
+;
+    background-size: 50px;
+}
+
+#five {
+    font-size: 15px;
+    border: 5px solid goldenrod;
+    overflow: hidden;
+    transform: scale(1.5, 2);
+    background: coral;
+    width: 500px;
+    height: 100px;
+    /*column-count: 5;*/
+    /*column-gap: 5px;*/
+    /*column-rule: 1px solid black;*/
+    /*text-shadow: 3px 3px 4px black;*/
+}

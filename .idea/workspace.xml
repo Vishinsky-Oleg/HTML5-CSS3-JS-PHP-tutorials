@@ -2,14 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46ff8488-5f79-476a-b722-45c6be6c7621" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CrossBrowserAsyncFunction.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/urlget.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/urlget.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/urlpost.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/urlpost.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xmlget.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xmlget.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/css_tut.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/img/bl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/img/border.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/img/bot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/img/br.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/img/left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/img/right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/img/tl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/img/top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/img/tr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/style_x.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codewars.php" beforeDir="false" afterPath="$PROJECT_DIR$/codewars.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +30,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -43,9 +48,10 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\bootstrap\css\img" />
+      <recent name="C:\xampp\htdocs\bootstrap\css" />
       <recent name="C:\xampp\htdocs\bootstrap\Validation form" />
       <recent name="C:\xampp\htdocs\bootstrap\img" />
-      <recent name="C:\xampp\htdocs\bootstrap\css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -75,7 +81,10 @@
       <workItem from="1588944952048" duration="6838000" />
       <workItem from="1589127261489" duration="743000" />
       <workItem from="1589210222717" duration="1184000" />
-      <workItem from="1589669260756" duration="5022000" />
+      <workItem from="1589669260756" duration="5140000" />
+      <workItem from="1589844307569" duration="5336000" />
+      <workItem from="1589922992235" duration="1437000" />
+      <workItem from="1590471005678" duration="8023000" />
     </task>
     <servers />
   </component>
