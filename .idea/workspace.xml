@@ -2,19 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46ff8488-5f79-476a-b722-45c6be6c7621" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/css_tut.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/img/bl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/img/border.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/img/bot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/img/br.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/img/left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/img/right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/img/tl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/img/top.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/img/tr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/style_x.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/img/apple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/img/orange.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jQuery/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossBrowserAsyncFunction.html" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/CrossBrowserAsyncFunction.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codewars.php" beforeDir="false" afterPath="$PROJECT_DIR$/codewars.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css_tut.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css_tut.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style_x.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style_x.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script_tut.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/script_tut.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/urlget.html" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/urlget.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/urlget.php" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/urlget.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/urlpost.html" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/urlpost.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/urlpost.php" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/urlpost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmlget.html" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/xmlget.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmlget.php" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/xmlget.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +33,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -48,10 +52,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\bootstrap\JavaScript" />
+      <recent name="C:\xampp\htdocs\bootstrap\AJAX" />
       <recent name="C:\xampp\htdocs\bootstrap\css\img" />
       <recent name="C:\xampp\htdocs\bootstrap\css" />
       <recent name="C:\xampp\htdocs\bootstrap\Validation form" />
-      <recent name="C:\xampp\htdocs\bootstrap\img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -85,6 +90,12 @@
       <workItem from="1589844307569" duration="5336000" />
       <workItem from="1589922992235" duration="1437000" />
       <workItem from="1590471005678" duration="8023000" />
+      <workItem from="1590554145568" duration="349000" />
+      <workItem from="1590555211605" duration="8164000" />
+      <workItem from="1590574244380" duration="250000" />
+      <workItem from="1590649429623" duration="5483000" />
+      <workItem from="1590682966262" duration="1650000" />
+      <workItem from="1590726865589" duration="1405000" />
     </task>
     <servers />
   </component>

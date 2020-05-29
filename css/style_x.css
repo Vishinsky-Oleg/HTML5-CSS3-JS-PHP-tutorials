@@ -52,12 +52,17 @@
     font-size: 15px;
     border: 5px solid goldenrod;
     overflow: hidden;
-    transform: scale(1.5, 2);
-    background: coral;
+    background: cadetblue;
     width: 500px;
     height: 100px;
     /*column-count: 5;*/
     /*column-gap: 5px;*/
     /*column-rule: 1px solid black;*/
     /*text-shadow: 3px 3px 4px black;*/
+}
+
+#eight {
+    position: absolute;
+    background: orange;
+    border: 1px solid red;
 }

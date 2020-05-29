@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery tut</title>
+<!--    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.0.js"></script>-->
+    <script src="jquery-3.5.1.js"></script>
+    <style>
+        .divs {
+            margin: 100px 50px;
+        }
+    </style>
+</head>
+<body>
+    <div>The jQuery library uses either the <code>$()</code> or <code>jQuery</code> function names</div>
+    <script>
+        $('code').css('border', '1px solid #aaa') //or
+        // jQuery('code').css('border', '1px solid #aaa')
+    </script>
+
+    <div>
+        <button id="btn">Click me</button>
+        <p id="one"></p>
+    </div>
+    <script>
+        $('#btn').click(function () {
+            $('#one').html('This is the text that appear! Shazam!')
+        })
+    </script>
+
+    <div class="divs">
+        <h2>Click in and out of this fields</h2>
+        <input id="first"> <input><input><input>
+
+    </div>
+    <script>
+        $('#first').focus()
+        $('input').focus(function () {$(this).css('background', '#ff0')})
+        $('input').blur(function () {$(this).css('background', '#aaa')})
+    </script>
+
+    <div class="divs">
+        <h2>Click and double click buttons</h2>
+        <button class="btncl">Button 1</button>
+        <button class="btncl">Button 2</button>
+        <button class="btncl">Button 3</button>
+        <button class="btncl">Button 4</button>
+        <button class="btncl">Button 5</button>
+    </div>
+    <script>
+        $('.btncl').click(function () {$(this).slideUp()})
+        $('.btncl').dblclick(function () {$(this).hide()})
+    </script>
+
+    <div class="divs">
+        <h2>Press some keys</h2>
+        <div id="four"></div>
+    </div>
+    <script>
+        $(document).keypress(function (event) {
+            key = String.fromCharCode(event.which)
+
+            if (key>= 'a' && key <='z' || key>= 'A' && key <='Z' || key>= '0' && key <='9') {
+                $('#four').html('You pressed: ' + key)
+                event.preventDefault()
+            }
+        })
+    </script>
+
+    <div class="divs">
+        <a href="https://www.google.com/">Link</a>
+        <div id="linktext"></div>
+    </div>
+    <script>
+        $('a').click(function (event) {
+            event.preventDefault();
+            $('<div>')
+                .append("Default " + event.type + " prevented")
+                .appendTo('#linktext');
+        });
+    </script>
+</body>
+</html>
