@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46ff8488-5f79-476a-b722-45c6be6c7621" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/img/apple.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/img/orange.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jQuery/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CrossBrowserAsyncFunction.html" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/CrossBrowserAsyncFunction.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codewars.php" beforeDir="false" afterPath="$PROJECT_DIR$/codewars.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/css_tut.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css_tut.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style_x.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style_x.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script_tut.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/script_tut.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/urlget.html" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/urlget.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/urlget.php" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/urlget.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/urlpost.html" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/urlpost.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/urlpost.php" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/urlpost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmlget.html" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/xmlget.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmlget.php" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/xmlget.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jQuery/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/jQuery/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +35,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet.xml" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -95,7 +83,9 @@
       <workItem from="1590574244380" duration="250000" />
       <workItem from="1590649429623" duration="5483000" />
       <workItem from="1590682966262" duration="1650000" />
-      <workItem from="1590726865589" duration="1405000" />
+      <workItem from="1590726865589" duration="4178000" />
+      <workItem from="1590741449896" duration="1870000" />
+      <workItem from="1590810414838" duration="2569000" />
     </task>
     <servers />
   </component>

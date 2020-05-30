@@ -8,17 +8,25 @@
     <style>
         .divs {
             margin: 100px 50px;
+            background-color: gainsboro;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        #pad {
+            background: #def;
+            border: 1px solid #aaa;
         }
     </style>
 </head>
 <body>
-    <div>The jQuery library uses either the <code>$()</code> or <code>jQuery</code> function names</div>
+    <div class="divs">The jQuery library uses either the <code>$()</code> or <code>jQuery</code> function names</div>
     <script>
         $('code').css('border', '1px solid #aaa') //or
         // jQuery('code').css('border', '1px solid #aaa')
     </script>
 
-    <div>
+    <div class="divs">
         <button id="btn">Click me</button>
         <p id="one"></p>
     </div>
@@ -53,18 +61,20 @@
     </script>
 
     <div class="divs">
-        <h2>Press some keys</h2>
+        <h2>Press some keys(activate function!!! Line 61)</h2>
         <div id="four"></div>
     </div>
     <script>
-        $(document).keypress(function (event) {
-            key = String.fromCharCode(event.which)
+        function keypress() {
+            $(document).keypress(function (event) {
+                key = String.fromCharCode(event.which)
 
-            if (key>= 'a' && key <='z' || key>= 'A' && key <='Z' || key>= '0' && key <='9') {
-                $('#four').html('You pressed: ' + key)
-                event.preventDefault()
-            }
-        })
+                if (key>= 'a' && key <='z' || key>= 'A' && key <='Z' || key>= '0' && key <='9') {
+                    $('#four').html('You pressed: ' + key)
+                    event.preventDefault()
+                }
+            })
+        }
     </script>
 
     <div class="divs">
@@ -79,5 +89,102 @@
                 .appendTo('#linktext');
         });
     </script>
+
+    <div class="divs">
+        <canvas id="pad" width="480" height="320"></canvas>
+    </div>
+    <script>
+        canvas = $('#pad')[0]
+        context = canvas.getContext('2d')
+        pendown = false
+
+        $('#pad').mousemove(function (event) {
+            let xpos = event.pageX - canvas.offsetLeft
+            let ypos = event.pageY - canvas.offsetTop
+
+            if (pendown) {context.lineTo(xpos, ypos)}
+            else {context.moveTo(xpos. ypos);}
+
+            context.stroke()
+        });
+
+        $('#pad').mousedown(function () {pendown = true})
+        $('#pad').mouseup(function () {pendown = false})
+    </script>
+
+    <div class="divs">
+        <h2 id="two"> Pass the mouse over me</h2>
+    </div>
+    <script>
+        $('#two').mouseenter(function () {$(this).html('Hey, stop clicking! ')})
+        $('#two').mouseleave(function () {$(this).html('Where did u go? ')})
+    </script>
+
+    <div class="divs">
+        <form id="form">
+            First name: <input type="text" id="fname" name="fname"><br>
+            Last name: <input type="text" id="lname" name="lname"><br>
+            <input type="submit">
+        </form>
+        <script>
+            $('form').submit(function(){
+                if ($('#fname').val() == '' || $('#lname').val() == '') {
+                    alert('Please enter both names')
+                    return false
+                }
+            })
+        </script>
+    </div>
+
+    <div class="divs">
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+        <p id="three"> Click <span class="bold">show</span> or <span class="bold">hide</span> button</p>
+    </div>
+    <script>
+        $('#hide').click(function() {$('#three').hide('slow', 'linear')})
+        $('#show').click(function() {$('#three').show('slow', 'linear')})
+    </script>
+
+    <div class="divs">
+        <button id="toggle">Toggle</button>
+        <p id="five">Click the <span class="bold">Toggle</span> button</p>
+    </div>
+    <script>
+        $('#toggle').click(function () {$('#five').toggle('slow', 'linear')})
+    </script>
+
+    <div class="divs">
+        <button id="fadeout">fadeOut</button>
+        <button id="fadein">fadeIn</button>
+        <button id="fadetoggle">fadeToggle</button>
+        <button id="fadeto">fadeTo</button>
+        <button id="unfade">Unfade</button>
+        <p id="six">Click the button above</p>
+    </div>
+    <script>
+        $('#fadeout').click(function() {$('#six').fadeOut('slow')})
+        $('#fadein').click(function() {$('#six').fadeIn('slow')})
+        $('#fadetoggle').click(function() {$('#six').fadeToggle('slow')})
+        $('#fadeto').click(function() {$('#six').fadeTo('slow', 0.5)})
+        $('#unfade').click(function() {$('#six').fadeTo('slow', 1)})
+    </script>
+
+    <div class="divs">
+        <button id="slideup">slideUp</button>
+        <button id="slidedown">slideDown</button>
+        <button id="slidetoggle">slideToggle</button>
+        <div id="para" style="background: #def">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos et obcaecati praesentium recusandae sit!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto fugiat minus nemo tenetur vitae. Ab beatae debitis doloribus ducimus id modi necessitatibus nulla, numquam quae quasi, qui suscipit? Autem cumque harum, hic ipsa laboriosam neque nesciunt nisi nobis odio officiis quaerat qui, totam ullam velit voluptatum! Aperiam beatae cum cumque dolor facilis necessitatibus qui repellat. Aperiam aspernatur beatae cumque dolor doloremque, eius fugiat ipsum iusto labore, laudantium maiores minima non nostrum nulla officia officiis pariatur provident quo quos rerum sit tempora ullam, voluptate voluptates voluptatum. Animi, aperiam asperiores doloremque esse molestiae sapiente sunt voluptatem! Corporis debitis eius ex ipsum sapiente.</p>
+        </div>
+    </div>
+    <script>
+        $('#slideup').click(function () {$('#para').slideUp('slow')})
+        $('#slidedown').click(function () {$('#para').slideDown('slow')})
+        $('#slidetoggle').click(function () {$('#para').slideToggle('slow')})
+    </script>
+
+    
 </body>
 </html>
