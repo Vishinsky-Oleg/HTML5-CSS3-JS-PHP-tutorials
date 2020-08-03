@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46ff8488-5f79-476a-b722-45c6be6c7621" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/jQuery/AJAXbyJQUERY.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jQuery/img/ball.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jQuery/img/link.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/bootstrap.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bootstrap.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codewars.php" beforeDir="false" afterPath="$PROJECT_DIR$/codewars.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jQuery/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/jQuery/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,18 +39,21 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../store" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet.xml" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\tutorials\jQuery\video" />
+      <recent name="C:\xampp\htdocs\bootstrap\jQuery\img" />
+      <recent name="C:\xampp\htdocs\bootstrap\jQuery" />
       <recent name="C:\xampp\htdocs\bootstrap\JavaScript" />
       <recent name="C:\xampp\htdocs\bootstrap\AJAX" />
-      <recent name="C:\xampp\htdocs\bootstrap\css\img" />
-      <recent name="C:\xampp\htdocs\bootstrap\css" />
-      <recent name="C:\xampp\htdocs\bootstrap\Validation form" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\bootstrap\jQuery" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -85,7 +94,17 @@
       <workItem from="1590682966262" duration="1650000" />
       <workItem from="1590726865589" duration="4178000" />
       <workItem from="1590741449896" duration="1870000" />
-      <workItem from="1590810414838" duration="2569000" />
+      <workItem from="1590810414838" duration="5306000" />
+      <workItem from="1590840878313" duration="3243000" />
+      <workItem from="1590911476463" duration="11194000" />
+      <workItem from="1591547370185" duration="1037000" />
+      <workItem from="1591550176940" duration="167000" />
+      <workItem from="1591550345400" duration="86000" />
+      <workItem from="1591555650631" duration="3951000" />
+      <workItem from="1591560459370" duration="1977000" />
+      <workItem from="1591648908609" duration="13465000" />
+      <workItem from="1591667216836" duration="907000" />
+      <workItem from="1592951768095" duration="51000" />
     </task>
     <servers />
   </component>

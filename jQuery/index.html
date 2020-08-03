@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>jQuery tut</title>
+<!--    CDN's: -->
 <!--    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.0.js"></script>-->
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
     <script src="jquery-3.5.1.js"></script>
     <style>
         .divs {
@@ -17,6 +19,20 @@
             background: #def;
             border: 1px solid #aaa;
         }
+        #seven {
+            width: 640px;
+            height: 480px;
+            background: green;
+            border: 1px solid #444;
+        }
+        #ball {
+            position: relative;
+        }
+        #quote {
+            border: 1px dotted #444;
+            height: 20px;
+        }
+
     </style>
 </head>
 <body>
@@ -185,6 +201,258 @@
         $('#slidetoggle').click(function () {$('#para').slideToggle('slow')})
     </script>
 
-    
+
+    <div class="divs">
+        <div id="seven">
+            <img src="img/ball.png" alt="" id="ball">
+        </div>
+    </div>
+    <script>
+        bounce()
+        function bounce() {
+            $('#ball')
+                .animate({left:'270px', top:'380px'}, 'slow', 'linear')
+                .animate({left:'540px', top:'190px'}, 'slow', 'linear')
+                .animate({left:'270px', top:'0px'}, 'slow', 'linear')
+                .animate({left:'0px', top:'190px'}, 'slow', 'linear', bounce)
+                // .animate({height:'hide', width: 'toggle'}, 'slow', 'linear')
+        }
+    </script>
+
+    <div class="divs">
+        <h1>Example Document</h1>
+        <p id="eight">This is the content of html</p>
+        <button id="alert">Alert!</button>
+        <script>
+            $('#alert').click( function () { alert($('#eight').html())})
+        </script>
+    </div>
+
+    <div class="divs">
+        <h2>Example Document(Activate Line 231)</h2>
+        <p id="nine"><a href="https://google.com" title="Google" id="link">Visit Google</a></p>
+    </div>
+    <script>
+        function attr() {
+            $('#link').text('Visit Yahoo')
+            $('#link').attr( {href: 'http://yahoo.com', title:'Yahoo'})
+            alert('The new HTML is:\n' + $('#nine').html())
+        }
+    </script>
+
+    <div class="divs">
+        <h2>Example Document</h2>
+        <a href="https://google.com" title="Google" id="link1">Visit Google</a>
+        <code id="ten">This is code section</code>
+        <p>
+            <button id="a">Remove image</button>
+            <button id="b">Empty quote</button>
+        </p>
+        <img src="img/ball.png" alt="" id="ball1">
+        <blockquote id="quote">test</blockquote>
+    </div>
+    <script>
+        $('#link1').prepend('Link: ')
+        $("#link1[href^='http']").append(" <img src='img/link.png'>")
+        $('#ten').before('<hr>').after('<hr>')
+        $('#a').click(function() {$('#ball1').remove()})
+        $('#b').click(function() {$('#quote').empty()})
+    </script>
+
+    <div class="divs">
+        <p>
+            <button id="getdoc">Get Document width</button>
+            <button id="getwin">Get window width</button>
+            <button id="getdiv">Get div width</button>
+            <button id="setdiv">Set div width to 150px</button>
+        </p>
+        <div id="result" style="width: 300px; height: 50px; background: #def;"></div>
+    </div>
+    <script>
+        $('#getdoc').click(function () {
+            $('#result').html('Document width: ' + $(document).width())
+        })
+        $('#getwin').click(function () {
+            $('#result').html('Window\'s width: ' + $(window).width())
+        })
+        $('#getdiv').click(function () {
+            $('#result').html('Div\'s width: ' + $('#result').css('width'))
+        })
+        $('#setdiv').click(function () {
+            $('#result').width(150)
+            $('#result').html('Div\'s width: ' + $('#result').width())
+        })
+    </script>
+
+    <div class="divs">
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <ul class="memo">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+    <script>
+        $('li').parent().css('fontWeight', 'bold')
+        $('li').parent('.memo').css('list-style-type', 'circle')
+    </script>
+
+    <div class="divs">
+        <div>
+            <section>
+                <blockquote>
+                    <ul>Item 1</ul>
+                    <ul id="element">Item 2</ul>
+                    <ul>Item 3</ul>
+                </blockquote>
+            </section>
+        </div>
+        <div>
+            <section>
+                <blockquote>
+                    <ul>Item 1</ul>
+                    <ul>Item 2</ul>
+                    <ul>Item 3</ul>
+                </blockquote>
+            </section>
+        </div>
+    </div>
+    <script>
+        $('#element').parents('div').css('background', 'yellow')
+        $('#element').parentsUntil('div').css('text-decoration', 'underline')
+    </script>
+
+    <div class="divs">
+        <ul>
+            <li class="eleven">Item 1</li>
+            <li id="twelve" class="eleven">Item 2</li>
+            <li>Item 3</li>
+            <li class="eleven">Item 4</li>
+            <li class="eleven">Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+        </ul>
+    </div>
+    <script>
+        // $('#twelve').siblings('.eleven').css('font-weight', 'bold')
+        $('#twelve').siblings('.eleven').addBack().css('font-weight', 'bold')
+        // $('#twelve').parent().children('.eleven').css('font-weight', 'bold')
+    </script>
+
+    <ul id="special">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li id="a1">Item 3</li>
+        <li>Item 4
+            <ol type="a">
+                <li>Item 4a</li>
+                <li>Item 4b</li>
+            </ol>
+        </li>
+        <li>Item 5</li>
+    </ul>
+    <script>
+        $('ul#special>li').first().css('text-decoration', 'underline')
+        $('ul#special>li').last().css('font-style', 'italic')
+        $('ul#special>li').eq(1).css('font-weight', 'bold')
+        $('ul#special>li').filter(':even').css('background', 'cyan')
+        $('ul#special>li').not('#a1').css('color', 'blue')
+        $('ul#special>li').has('ol').css('text-decoration', 'line-through')
+    </script>
+
+    <div class="divs">
+        <div><button>Button in a div</button></div>
+        <div><button>Button in a div</button></div>
+        <span><button>Button in a span</button></span>
+        <div><button>Button in a div</button></div>
+        <span><button>Button in a span</button></span>
+        <p id="a2"></p>
+    </div>
+    <script>
+        $('button').click(function () {
+            let elem = '';
+            if ($(this).parent().is('div')) {elem = 'div'}
+            else {elem = 'span'}
+            $('#a2').html('You clicked a '+ elem)
+        })
+    </script>
+
+    <div class="divs">
+        <div id="a3"></div>
+    </div>
+    <script>
+        pets = {
+            Scratchy:'Guinea Pig',
+            Squeeky:'Guinea Pig',
+            Fluffy:'Rabbit',
+            Thumper:'Rabbit',
+            Snoopy:'Dog',
+            Tiddles:'Cat'
+        }
+        guineapigs = []
+
+
+        $.each(pets, function(name, type) {
+            if (type=='Guinea Pig') {guineapigs.push(name)}
+        })
+        // or !!!!!!!SAME BUT LESS CODE AND LOOK CLOSELY AT ARGUMENTS ORDER IN FUNCTIONS
+        // guineapigs = $.map(pets, function(type, name){
+        //     if (type=='Guinea Pig') {return name}
+        // })
+
+
+        $('#a3').html('The guinea pig names are: ' + guineapigs.join(' & '))
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        window.scrollTo(0, document.body.scrollHeight); //Scroll to end of document
+    </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -2,9 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>AJAX by jQuery</title>
+    <script src="jquery-3.5.1.js"></script>
 </head>
 <body>
-$END$
+    <div class="divs" style="text-align: center">
+        <h1>Loading web page into DIV</h1>
+        <div id="a4">This sentence will be replaced</div>
+        <script>
+            $.post('../AJAX/urlpost.php', {url: 'amazon.com/gp/aw' }, function (data) {
+                $('#a4').html(data)
+            })
+        </script>
+    </div>
+    <div class="divs" style="text-align: center">
+        <h1>Loading web page into DIV</h1>
+        <div id="a5">This sentence will be replaced</div>
+        <script>
+            $.get('../AJAX/urlget.php', {url: 'amazon.com/gp/aw' }, function (data) {
+                $('#a5').html(data)
+            })
+        </script>
+    </div>
+
+
+
 </body>
 </html>
