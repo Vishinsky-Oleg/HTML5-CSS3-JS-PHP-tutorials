@@ -23,10 +23,10 @@ function alphabet_position_advanced(string $s): string
 }
 
 
-function decode_morse(string $code): string
-{
-    return strtr(trim($code), MORSE_CODE + ['  ' => ' ', ' ' => '']);
-}
+// function decode_morse(string $code): string
+// {
+//     return strtr(trim($code), MORSE_CODE + ['  ' => ' ', ' ' => '']);
+// }
 
 function dirReduc($arr)
 {
